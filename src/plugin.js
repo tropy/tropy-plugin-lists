@@ -38,9 +38,6 @@ class ListsPlugin {
   }
 
   async import(payload) {
-    this.context.logger.trace('Called import hook from plugin-lists')
-    console.log(this.context)
-
     const result = await this.context.dialog.open({
       properties: ['openDirectory']
     })
@@ -52,7 +49,7 @@ class ListsPlugin {
 
     const graph = await Promise.all(files.map(async (filePath) => {
       const relDir = path.relative(dir, path.dirname(filePath))
-      const list = relDir ? [normalizePath(relDir)] : []
+      const list = relDir ? [normalizePath(relDir)] : [normalizePath(path.basename(dir))]
       const title = path.basename(filePath, path.extname(filePath))
 
       const sharp = await this.context.sharp.open(filePath)
