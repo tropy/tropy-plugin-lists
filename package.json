@@ -1,8 +1,8 @@
 {
-  "name": "tropy-plugin-example",
-  "productName": "Example Plugin",
-  "version": "1.0.0-beta.1",
-  "description": "A Tropy plugin for doing something!",
+  "name": "tropy-plugin-lists",
+  "productName": "Lists",
+  "version": "1.0.0-beta.4",
+  "description": "Import folder trees as nested lists",
   "icon": "icon.svg",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tropy/tropy-plugin-example.git"
+    "url": "git+https://github.com/tropy/tropy-plugin-lists.git"
   },
   "keywords": [
     "tropy",
@@ -21,26 +21,13 @@
   ],
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/tropy/tropy-plugin-example/issues"
+    "url": "https://github.com/tropy/tropy-plugin-lists/issues"
   },
-  "homepage": "https://github.com/tropy/tropy-plugin-example#readme",
+  "homepage": "https://github.com/tropy/tropy-plugin-lists#readme",
   "hooks": {
     "export": false,
     "import": true
   },
-  "options": [
-    {
-      "field": "clipboard",
-      "label": "Example: Copy exported data to clipboard?",
-      "type": "boolean",
-      "default": false
-    },
-    {
-      "field": "file",
-      "type": "save-file",
-      "label": "Example: Save export as"
-    }
-  ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
