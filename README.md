@@ -19,7 +19,7 @@ files and assign them to lists mirroring the original structure.
 
 ## Plugin configuration
 To configure the plugin, click its *Settings* button in *Preferences > Plugins*:
-  - Choose a plugin *Name* that will show up in the *File > Import* menu (e.g. *IIIF Manifest*).
+  - Choose a plugin *Name* that will show up in the *File > Import* menu (e.g. *Import as lists*).
 
 ## Feedback
 Missing a feature or having problems? Please head over to the [Tropy forums](https://forums.tropy.org/) and let us know.
